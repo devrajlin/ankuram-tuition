@@ -1164,6 +1164,15 @@ webkit-box-shadow: 0 8px 32px -6px rgba(0,0,0,.14);
 }
 
 @media only screen and (max-width: 480px) {
+  nav, .navbar {
+    overflow: hidden; /* prevents expanding */
+  }
+
+  /* Optional: fix AOS elements that cause extra height */
+  [data-aos] {
+    transform: none !important;
+    opacity: 1 !important;
+  }
 
   .about-teacher button{
     width: 100%;
@@ -1183,6 +1192,15 @@ webkit-box-shadow: 0 8px 32px -6px rgba(0,0,0,.14);
     margin-top: 50px;
     text-align: center;
   }
+
+  .homepage-header .card-icon i{
+    font-size: 1.5rem;
+  }
+
+  .fundamentals .card{
+    margin-top: 20px;
+  }
+
 
 
   .product-tabs{
